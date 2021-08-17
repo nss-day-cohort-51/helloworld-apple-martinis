@@ -3,32 +3,34 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     color: navy;
+    overflow-x: hidden;
 }
 .navigation {
     display: flex;
-    padding: 25px;
     background-color: rgb(236, 219, 205);
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 10px;
+    padding: 25px;
 }
 .listOfLists {
+    flex-basis: 0;
     display: flex;
     flex-flow: row;
     padding: 10px;
     justify-content: space-evenly;
 }
 .countryImage {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 footer {
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
     color: black;
     display: flex;
     justify-content: center;
+    margin: 30px;
 }
 h1 {
     width: 100%;
@@ -40,4 +42,26 @@ h1 {
 .lists {
     background-color: rgb(236, 219, 205);
     padding: 20px;
+    flex-basis: 20%;
+    border-radius: 10%;
+}
+.nav-link {
+    font-size: 40px;
+    padding: 25px;
+    color: navy;
+    text-decoration: none;
+}
+.nav-link-active {
+    background-color:rgb(173, 156, 141);
+    font-size: 40px;
+    padding: 25px;
+    color: navy;
+    text-decoration: none;
+    border-radius: 10%;
+}
+.headerText {
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
 }
